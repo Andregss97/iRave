@@ -41,6 +41,37 @@ div{
     padding: 0px 5px;
 }
 
+.buttonRest1 {
+    background-color: rgb(70,130,180);
+    border: none;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-top: 18px;
+    width: 141px;
+    height:50px;
+}
+
+.buttonRest {
+    background-color: rgb(70,130,180);
+    border: none;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-top: 3px;
+    width: 141px;
+    height:50px;
+}
+
+
 .previous {
     background-color: #333333;
     color: white;
@@ -52,7 +83,7 @@ div{
 }
 
 .round {
-    border-radius: 50%;
+    border-radius: 70%;
 }
 
 .no-click {
@@ -84,6 +115,11 @@ div{
   border-style: solid;
   border-color: #cecece;
   text-align: center;
+}
+
+.Restaurant{
+    width:141px;
+
 }
 
 #txt{
