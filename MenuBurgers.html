@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,4 +82,89 @@
 </div>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iRave</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};
+        return i;
+    }
+  </script>
+</head>
+
+<body onload="startTime()">
+<img id="smartwatch" src="images/smartwatch.png" alt="smartwatchImage"/>
+<map name="homeButton">
+    <area shape="circle" coords="230,140,10" href="index.html" alt="Button">
+</map>
+
+<div>
+    <p>
+        <sub id="input_div">
+            <input type="button" value="-" id="minus" onclick="minus()">
+            <img src="images/burger.png" style="width: 50px; height:50px;">
+            <input type="text" style="width: 10px;" value="0" id="count">
+            <input type="button" value="+" id="plus" onclick="plus()">
+
+
+        <script>
+            var count = 0;
+                var countEl = document.getElementById("count");
+                function plus(){
+                    count++;
+                    countEl.value = count;
+                }
+                function minus(){
+                  if (count > 0) {
+                    count--;
+                    countEl.value = count;
+                  }
+                }
+        </script>
+        </sub>
+    </p>
+    <p>
+        <sub id="input_div2">
+            <input type="button" value="-" id="minus2" onclick="minus2()">
+            <img src="images/fries.png" style="width: 50px; height:50px;">
+            <input type="text" style="width: 10px;" value="0" id="count2">
+            <input type="button" value="+" id="plus2" onclick="plus2()">
+
+
+        <script>
+            var count2 = 0;
+                var countEl2 = document.getElementById("count2");
+                function plus2(){
+                    count2++;
+                    countEl2.value = count2;
+                }
+                function minus2(){
+                  if (count2 > 0) {
+                    count2--;
+                    countEl2.value = count2;
+                  }
+                }
+        </script>
+        </sub>
+    </p>
+</div>
+
+</body>
+>>>>>>> c6a71abcfdba9692f08d70b50953c383b6cfbd60
 </html>
