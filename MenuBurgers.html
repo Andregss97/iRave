@@ -5,39 +5,16 @@
     <meta charset="UTF-8">
     <title>iRave</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-    function startTime() {
-        var today = new Date();
-        var h = today.getHours();
-        var m = today.getMinutes();
-        var s = today.getSeconds();
-        m = checkTime(m);
-        s = checkTime(s);
-        document.getElementById('txt').innerHTML =
-        h + ":" + m + ":" + s;
-        var t = setTimeout(startTime, 500);
-    }
-    function checkTime(i) {
-        if (i < 10) {i = "0" + i};
-        return i;
-    }
-  </script>
 </head>
 
-<body onload="startTime()">
-<img id="smartwatch" src="images/smartwatch.png" alt="smartwatchImage"/>
-<map name="homeButton">
-    <area shape="circle" coords="230,140,10" href="index.html" alt="Button">
-</map>
-
-<div>
-    <p>
+<body class="RestChoose">
+        <input type="button" onclick="window.location.href='Restaurants.html'" value="x" style="position: absolute; width: 23px; border-radius:15px; background-color:black; color: white; margin-top:-2px; margin-left:-2px;">
         <sub id="input_div">
-            <input type="button" value="-" id="minus" onclick="minus()">
-            <img src="images/burger.png" style="width: 50px; height:50px;">
-            <input type="text" style="width: 10px;" value="0" id="count">
-            <input type="button" value="+" id="plus" onclick="plus()">
-
+            <input type="button" value="-" id="minus" onclick="minus()" style="position:absolute; margin-top:15px; margin-left: 22px;">
+            <img id="icon1" src="images/burger.png" style="width: 50px; height:50px;">
+            <input type="text" style="width: 10px; margin-top:2px;" value="0" id="count">
+            <input type="button" value="+" id="plus" onclick="plus()" style="position:absolute; margin-top:15px; margin-left: 104px;">
+            <p style="position:absolute; font-size: 12px; top: 35px; left:50px;">Price: 2 €</p>
 
         <script>
             var count = 0;
@@ -54,13 +31,13 @@
                 }
         </script>
         </sub>
-    </p>
     <p>
         <sub id="input_div2">
-            <input type="button" value="-" id="minus2" onclick="minus2()">
-            <img src="images/fries.png" style="width: 50px; height:50px;">
-            <input type="text" style="width: 10px;" value="0" id="count2">
-            <input type="button" value="+" id="plus2" onclick="plus2()">
+            <input type="button" value="-" id="minus2" onclick="minus2()" style="position:absolute; margin-top:62px; margin-left: 22px;">
+            <img id="icon2" src="images/fries.png" style="width: 50px; height:50px;">
+            <input type="text" style="width: 15px; margin-top:55px;" value="0" id="count2">
+            <input type="button" value="+" id="plus2" onclick="plus2()" style="position:absolute; margin-top:62px; margin-left: 104px;">
+            <p style="position:absolute; font-size: 12px; top: 106px; left:45px;">Price: 1,5 €</p>
 
 
         <script>
@@ -79,7 +56,32 @@
         </script>
         </sub>
     </p>
-</div>
+
+    <p>
+        <sub id="input_div3">
+            <input type="button" value="-" id="minus3" onclick="minus3()" style="position:absolute; margin-top:135px; margin-left: 22px;">
+            <img id="icon3" src="images/coke.png" style="width: 50px; height:50px;">
+            <input type="text" style="width: 15px; margin-top:125px;" value="0" id="count3">
+            <input type="button" value="+" id="plus3" onclick="plus3()" style="position:absolute; margin-top:135px; margin-left: 104px;">
+            <p style="position:absolute; font-size: 12px; top: 182px; left:45px;">Price: 1,5 €</p>
+
+
+        <script>
+            var count3 = 0;
+                var countEl3 = document.getElementById("count3");
+                function plus3(){
+                    count3++;
+                    countEl3.value = count3;
+                }
+                function minus3(){
+                  if (count3 > 0) {
+                    count3--;
+                    countEl3.value = count3;
+                  }
+                }
+        </script>
+        </sub>
+    </p>
 
 </body>
 

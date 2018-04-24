@@ -44,21 +44,6 @@ p{
     padding: 0px 5px;
 }
 
-.buttonRest1 {
-    background-color: rgb(70,130,180);
-    border: none;
-    color: white;
-
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px;
-    margin-top: 18px;
-    width: 141px;
-    height:50px;
-}
-
 .buttonRest {
     background-color: rgb(70,130,180);
     border: none;
@@ -122,19 +107,46 @@ p{
 
 .Restaurant{
     width:141px;
+}
 
+.Restaurants iframe{
+  position:absolute;
+  top:13px;
+  left:3px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 input[type=text] {
+    position: absolute;
+    margin-left: 88px;
     border: 2px;
     background-color: rgb(232,76,61);
     border-radius: 5px;
     text-align: center;
 }
 
+.RestChoose{
+  width: 125px;
+  height: 151px;
+  position: absolute;
+}
 
-#div_input{
-    align:center;
+#icon1{
+  position: absolute;
+  margin-left: 48px;
+}
+
+#icon2{
+  position: absolute;
+  margin-left: 48px;
+  margin-top:50px;
+}
+
+#icon3{
+  position: absolute;
+  margin-left: 48px;
+  margin-top:125px;
 }
 
 #txt{
