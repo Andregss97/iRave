@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iRave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="RestChoose">
+<input type="button" onclick="window.location.href='Restaurants.html'" value="x" style="position: absolute; width: 23px; border-radius:15px; background-color:black; color: white; margin-top:-2px; margin-left:-2px;">
+<sub id="input_div">
+    <input type="button" value="-" id="minus" onclick="minus()" style="position:absolute; margin-top:15px; margin-left: 22px;">
+    <img id="icon1" src="images/hotdog.png" style="width: 50px; height:50px;">
+    <input type="text" style="width: 15px; margin-top:2px;" value="0" id="count">
+    <input type="button" value="+" id="plus" onclick="plus()" style="position:absolute; margin-top:15px; margin-left: 104px;">
+    <p style="position:absolute; font-size: 12px; top: 35px; left:45px;">Hot Dog - 3 €</p>
+
+    <script>
+            var count = 0;
+                var countEl = document.getElementById("count");
+                function plus(){
+                    count++;
+                    countEl.value = count;
+                }
+                function minus(){
+                  if (count > 0) {
+                    count--;
+                    countEl.value = count;
+                  }
+                }
+        </script>
+</sub>
+<p>
+    <sub id="input_div2">
+        <input type="button" value="-" id="minus2" onclick="minus2()" style="position:absolute; margin-top:65px; margin-left: 22px;">
+        <img id="icon2" src="images/hotdog.png" style="width: 50px; height:50px;">
+        <input type="text" style="width: 15px; margin-top:55px;" value="0" id="count2">
+        <input type="button" value="+" id="plus2" onclick="plus2()" style="position:absolute; margin-top:65px; margin-left: 104px;">
+<p style="position:absolute; font-size: 12px; top: 105px; left:25px;">Hot Dog Spicy - 3 €</p>
+
+
+<script>
+            var count2 = 0;
+                var countEl2 = document.getElementById("count2");
+                function plus2(){
+                    count2++;
+                    countEl2.value = count2;
+                }
+                function minus2(){
+                  if (count2 > 0) {
+                    count2--;
+                    countEl2.value = count2;
+                  }
+                }
+        </script>
+</sub>
+</p>
+
+<p>
+    <sub id="input_div3">
+        <input type="button" value="-" id="minus3" onclick="minus3()" style="position:absolute; margin-top:140px; margin-left: 22px;">
+        <img id="icon3" src="images/hotdogXL.png" style="width: 50px; height:50px;">
+        <input type="text" style="width: 15px; margin-top:130px;" value="0" id="count3">
+        <input type="button" value="+" id="plus3" onclick="plus3()" style="position:absolute; margin-top:140px; margin-left: 104px;">
+<p style="position:absolute; font-size: 12px; top: 180px; left:25px;">Hot Dog XL - 3.5 €</p>
+
+
+<script>
+            var count3 = 0;
+                var countEl3 = document.getElementById("count3");
+                function plus3(){
+                    count3++;
+                    countEl3.value = count3;
+                }
+                function minus3(){
+                  if (count3 > 0) {
+                    count3--;
+                    countEl3.value = count3;
+                  }
+                }
+        </script>
+</sub>
+</p>
+
+<p>
+    <sub id="input_div4">
+        <input type="button" value="-" id="minus4" onclick="minus4()" style="position:absolute; margin-top:215px; margin-left: 22px;">
+        <img id="icon4" src="images/fries.png" style="width: 50px; height:50px;">
+        <input type="text" style="width: 15px; margin-top:205px;" value="0" id="count4">
+        <input type="button" value="+" id="plus4" onclick="plus4()" style="position:absolute; margin-top:215px; margin-left: 104px;">
+<p style="position:absolute; font-size: 12px; top: 255px; left:45px;">Fries - 1 €</p>
+
+
+<script>
+            var count4 = 0;
+                var countEl4 = document.getElementById("count4");
+                function plus4(){
+                    count4++;
+                    countEl4.value = count4;
+                }
+                function minus4(){
+                  if (count4 > 0) {
+                    count4--;
+                    countEl4.value = count4;
+                  }
+                }
+        </script>
+</sub>
+</p>
+
+<p>
+    <sub id="input_div5">
+        <input type="button" value="-" id="minus5" onclick="minus5()" style="position:absolute; margin-top:290px; margin-left: 22px;">
+        <img id="icon5" src="images/coke.png" style="width: 50px; height:50px;">
+        <input type="text" style="width: 15px; margin-top:280px;" value="0" id="count5">
+        <input type="button" value="+" id="plus5" onclick="plus5()" style="position:absolute; margin-top:290px; margin-left: 104px;">
+<p style="position:absolute; font-size: 12px; top: 330px; left:45px;">Coke: 1.20 €</p>
+
+
+<script>
+            var count5 = 0;
+                var countEl5 = document.getElementById("count5");
+                function plus5(){
+                    count5++;
+                    countEl5.value = count5;
+                }
+                function minus5(){
+                  if (count5 > 0) {
+                    count5--;
+                    countEl5.value = count5;
+                  }
+                }
+        </script>
+</sub>
+</p>
+
+<p>
+    <sub id="input_div6">
+        <input type="button" value="-" id="minus6" onclick="minus6()" style="position:absolute; margin-top:365px; margin-left: 22px;">
+        <img id="icon6" src="images/icetea.png" style="width: 50px; height:50px;">
+        <input type="text" style="width: 15px; margin-top:355px;" value="0" id="count6">
+        <input type="button" value="+" id="plus6" onclick="plus6()" style="position:absolute; margin-top:365px; margin-left: 104px;">
+<p style="position:absolute; font-size: 12px; top: 405px; left:45px;">Iced Tea: 1.20 €</p>
+
+
+<script>
+            var count6 = 0;
+                var countEl6 = document.getElementById("count6");
+                function plus6(){
+                    count6++;
+                    countEl6.value = count6;
+                }
+                function minus6(){
+                  if (count6 > 0) {
+                    count6--;
+                    countEl6.value = count6;
+                  }
+                }
+        </script>
+</sub>
+</p>
+
+<p>
+    <sub id="input_div7">
+        <input type="button" value="-" id="minus7" onclick="minus7()" style="position:absolute; margin-top:440px; margin-left: 22px;">
+        <img id="icon7" src="images/water.png" style="width: 50px; height:50px;">
+        <input type="text" style="width: 15px; margin-top:430px;" value="0" id="count7">
+        <input type="button" value="+" id="plus7" onclick="plus7()" style="position:absolute; margin-top:440px; margin-left: 104px;">
+<p style="position:absolute; font-size: 12px; top: 480px; left:45px;">Water: 0.80 €</p>
+
+
+<script>
+            var count7 = 0;
+                var countEl7 = document.getElementById("count7");
+                function plus7(){
+                    count7++;
+                    countEl7.value = count7;
+                }
+                function minus7(){
+                  if (count7 > 0) {
+                    count7--;
+                    countEl7.value = count7;
+                  }
+                }
+        </script>
+</sub>
+</p>
+
+<p style="position:absolute; font-size: 12px; top: 500px; left:25px;">Total: FAZER SOMA</p>
+
+
+</body>
+
+</html>

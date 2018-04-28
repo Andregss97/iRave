@@ -46,17 +46,16 @@ p{
 
 .buttonRest {
     background-color: rgb(70,130,180);
-    border: none;
     color: white;
-
     text-align: center;
-    text-decoration: none;
+    text-decoration:none;
     display: inline-block;
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 12px;
     margin-top: 3px;
     width: 141px;
-    height:50px;
+    height:40px;
 }
 
 
@@ -148,6 +147,38 @@ input[type=text] {
   margin-left: 48px;
   margin-top:125px;
 }
+
+#icon4{
+  position: absolute;
+  margin-left: 48px;
+  margin-top:200px;
+}
+
+#icon5{
+  position: absolute;
+  margin-left: 48px;
+  margin-top:275px;
+}
+
+#icon6{
+  position: absolute;
+  margin-left: 48px;
+  margin-top:350px;
+}
+
+#icon7{
+  position: absolute;
+  margin-left: 48px;
+  margin-top:425px;
+}
+
+#icon8{
+  position: absolute;
+  margin-left: 48px;
+  margin-top:500px;
+}
+
+
 
 #txt{
   position: absolute;
