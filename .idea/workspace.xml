@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c672ac9-fd6d-4d11-bfe0-73200a32b887" name="Default" comment="menus novos">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BifanasMenu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HotdogMenu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/coke.png" afterPath="$PROJECT_DIR$/images/coke.png" />
+    <list default="true" id="6c672ac9-fd6d-4d11-bfe0-73200a32b887" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MenuBurgers.html" afterPath="$PROJECT_DIR$/MenuBurgers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Restaurants.html" afterPath="$PROJECT_DIR$/Restaurants.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -395,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523982909760</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="menus novos">
+      <created>1524924544907</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1524924544908</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -437,7 +438,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu" />
+    <MESSAGE value="menus novos" />
+    <option name="LAST_COMMIT_MESSAGE" value="menus novos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
