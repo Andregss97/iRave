@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>iRave</title>
     <link rel="stylesheet" href="style.css">
+    <script>var total = 0;</script>
 </head>
 
 <body class="RestChoose">
@@ -14,19 +15,24 @@
     <img id="icon1" src="images/hotdog.png" style="width: 50px; height:50px;">
     <input type="text" style="width: 15px; margin-top:2px;" value="0" id="count" name="count">
     <input type="button" value="+" id="plus" onclick="plus(); findTotal()" style="position:absolute; margin-top:15px; margin-left: 104px;">
-    <p style="position:absolute; font-size: 12px; top: 35px; left:45px;">Hot Dog - 3 €</p>
+    <p style="position:absolute; font-size: 12px; top: 35px; left:45px;">Hot Dog: 3 €</p>
 
     <script>
             var count = 0;
+            var price1 = 3;
                 var countEl = document.getElementById("count");
                 function plus(){
                     count++;
+                    total=Math.round((total+price1)*1e12)/1e12;
                     countEl.value = count;
+                    total.value = total;
                 }
                 function minus(){
                   if (count > 0) {
                     count--;
+                    total=Math.round((total-price1)*1e12)/1e12;
                     countEl.value = count;
+                    total.value = total;
                   }
                 }
         </script>
@@ -37,20 +43,25 @@
         <img id="icon2" src="images/hotdog.png" style="width: 50px; height:50px;">
         <input type="text" style="width: 15px; margin-top:55px;" value="0" id="count2" name="count">
         <input type="button" value="+" id="plus2" onclick="plus2(); findTotal()" style="position:absolute; margin-top:65px; margin-left: 104px;">
-<p style="position:absolute; font-size: 12px; top: 105px; left:27px;">Hot Dog Spicy - 3 €</p>
+<p style="position:absolute; font-size: 12px; top: 105px; left:27px;">Hot Dog Spicy: 3 €</p>
 
 
 <script>
             var count2 = 0;
+            var price2 = 3;
                 var countEl2 = document.getElementById("count2");
                 function plus2(){
                     count2++;
+                    total=Math.round((total+price2)*1e12)/1e12;
                     countEl2.value = count2;
+                    total.value = total;
                 }
                 function minus2(){
                   if (count2 > 0) {
                     count2--;
+                    total=Math.round((total-price2)*1e12)/1e12;
                     countEl2.value = count2;
+                    total.value = total;
                   }
                 }
         </script>
@@ -63,20 +74,25 @@
         <img id="icon3" src="images/hotdogXL.png" style="width: 50px; height:50px;">
         <input type="text" style="width: 15px; margin-top:130px;" value="0" id="count3" name="count">
         <input type="button" value="+" id="plus3" onclick="plus3(); findTotal()" style="position:absolute; margin-top:140px; margin-left: 104px;">
-<p style="position:absolute; font-size: 12px; top: 180px; left:30px;">Hot Dog XL - 3.5 €</p>
+<p style="position:absolute; font-size: 12px; top: 180px; left:30px;">Hot Dog XL: 3.5 €</p>
 
 
 <script>
             var count3 = 0;
+            var price3 = 3.5;
                 var countEl3 = document.getElementById("count3");
                 function plus3(){
                     count3++;
+                    total=Math.round((total+price3)*1e12)/1e12;
                     countEl3.value = count3;
+                    total.value = total;
                 }
                 function minus3(){
                   if (count3 > 0) {
                     count3--;
+                    total=Math.round((total-price3)*1e12)/1e12;
                     countEl3.value = count3;
+                    total.value = total;
                   }
                 }
         </script>
@@ -89,20 +105,25 @@
         <img id="icon4" src="images/fries.png" style="width: 50px; height:50px;">
         <input type="text" style="width: 15px; margin-top:205px;" value="0" id="count4" name="count">
         <input type="button" value="+" id="plus4" onclick="plus4(); findTotal()" style="position:absolute; margin-top:215px; margin-left: 104px;">
-<p style="position:absolute; font-size: 12px; top: 255px; left:45px;">Fries - 1 €</p>
+<p style="position:absolute; font-size: 12px; top: 255px; left:52px;">Fries: 1 €</p>
 
 
 <script>
             var count4 = 0;
+            var price4 = 1;
                 var countEl4 = document.getElementById("count4");
                 function plus4(){
                     count4++;
+                    total=Math.round((total+price4)*1e12)/1e12;
                     countEl4.value = count4;
+                    total.value = total;
                 }
                 function minus4(){
                   if (count4 > 0) {
                     count4--;
+                    total=Math.round((total-price4)*1e12)/1e12;
                     countEl4.value = count4;
+                    total.value = total;
                   }
                 }
         </script>
@@ -120,15 +141,20 @@
 
 <script>
             var count5 = 0;
+            var price5 = 1.20;
                 var countEl5 = document.getElementById("count5");
                 function plus5(){
                     count5++;
+                    total=Math.round((total+price5)*1e12)/1e12;
                     countEl5.value = count5;
+                    total.value = total;
                 }
                 function minus5(){
                   if (count5 > 0) {
                     count5--;
+                    total=Math.round((total-price5)*1e12)/1e12;
                     countEl5.value = count5;
+                    total.value = total;
                   }
                 }
         </script>
@@ -141,20 +167,25 @@
         <img id="icon6" src="images/icetea.png" style="width: 50px; height:50px;">
         <input type="text" style="width: 15px; margin-top:355px;" value="0" id="count6" name="count">
         <input type="button" value="+" id="plus6" onclick="plus6(); findTotal()" style="position:absolute; margin-top:365px; margin-left: 104px;">
-<p style="position:absolute; font-size: 12px; top: 405px; left:45px;">Iced Tea: 1.20 €</p>
+<p style="position:absolute; font-size: 12px; top: 405px; left:35px;">Iced Tea: 1.20 €</p>
 
 
 <script>
             var count6 = 0;
+            var price6 = 1.20;
                 var countEl6 = document.getElementById("count6");
                 function plus6(){
                     count6++;
+                    total=Math.round((total+price6)*1e12)/1e12;
                     countEl6.value = count6;
+                    total.value = total;
                 }
                 function minus6(){
                   if (count6 > 0) {
                     count6--;
+                    total=Math.round((total-price6)*1e12)/1e12;
                     countEl6.value = count6;
+                    total.value = total;
                   }
                 }
         </script>
@@ -167,42 +198,41 @@
         <img id="icon7" src="images/water.png" style="width: 50px; height:50px;">
         <input type="text" style="width: 15px; margin-top:430px;" value="0" id="count7" name="count">
         <input type="button" value="+" id="plus7" onclick="plus7(); findTotal()" style="position:absolute; margin-top:440px; margin-left: 104px;">
-<p style="position:absolute; font-size: 12px; top: 480px; left:45px;">Water: 0.80 €</p>
+<p style="position:absolute; font-size: 12px; top: 480px; left:42px;">Water: 0.80 €</p>
 
 
 <script>
             var count7 = 0;
+            var price7 = 0.80;
                 var countEl7 = document.getElementById("count7");
                 function plus7(){
                     count7++;
+                    total=Math.round((total+price7)*1e12)/1e12;
                     countEl7.value = count7;
+                    total.value = total;
                 }
                 function minus7(){
                   if (count7 > 0) {
                     count7--;
+                    total=Math.round((total-price7)*1e12)/1e12;
                     countEl7.value = count7;
+                    total.value = total;
                   }
                 }
         </script>
 </sub>
 </p>
 
-<p style="position:absolute; font-size: 12px; top: 500px; left:25px;">
+<h1 style="position:absolute; font-size: 12px; top: 510px; left:0px;">
     <script type="text/javascript">
                 function findTotal(){
-                    var arr = document.getElementsByName('count');
-                    var tot=0;
-                    for(var i=0;i<arr.length;i++){
-                        if(parseInt(arr[i].value))
-                            tot += parseInt(arr[i].value);
-                    }
-                    document.getElementById('total').value = tot;
+                    document.getElementById('total').value = total;
                 }
-
     </script>
-    Total : <input type="text" name="total" id="total"/>
-</p>
+    Total:<input type="total" name="total" id="total"/> €
+</h1>
 
+<a class="Concluido" type="button" href=".html">Concluir</a>
 
 </body>
 

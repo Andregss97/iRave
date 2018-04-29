@@ -58,6 +58,21 @@ p{
     height:40px;
 }
 
+.Concluido {
+    position: absolute;
+    width: 55px;
+    top: 519px;
+    left: 85px;
+    background-color: rgb(70,130,180);
+    color: white;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 6px;
+}
+
 
 .previous {
     background-color: #333333;
@@ -123,6 +138,15 @@ input[type=text] {
     background-color: rgb(232,76,61);
     border-radius: 5px;
     text-align: center;
+}
+
+input[type=total] {
+    position: relative;
+    text-align: center;
+    background-color: rgb(232, 76, 61);
+    border-radius: 5px;
+    border: 2px;
+    width: 35px;
 }
 
 .RestChoose{
