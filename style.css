@@ -17,6 +17,9 @@ div{
   border-color: rgb(230,230,250);
 }
 
+p{
+    text-align:center;
+}
 .Days h1{
   width: 135px;
   text-align: center;
@@ -26,7 +29,7 @@ div{
   margin-left: 5px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  background-color: #87CEEB;
+  background-color: rgb(70,130,180);
   border-style: solid;
   border-color: #cecece;
   border-width: 3px;
@@ -41,6 +44,21 @@ div{
     padding: 0px 5px;
 }
 
+.buttonRest {
+    background-color: rgb(70,130,180);
+    color: white;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 12px;
+    margin-top: 3px;
+    width: 141px;
+    height:40px;
+}
+
+
 .previous {
     background-color: #333333;
     color: white;
@@ -52,7 +70,7 @@ div{
 }
 
 .round {
-    border-radius: 50%;
+    border-radius: 70%;
 }
 
 .no-click {
@@ -85,6 +103,82 @@ div{
   border-color: #cecece;
   text-align: center;
 }
+
+.Restaurant{
+    width:141px;
+}
+
+.Restaurants iframe{
+  position:absolute;
+  top:13px;
+  left:3px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+input[type=text] {
+    position: absolute;
+    margin-left: 88px;
+    border: 2px;
+    background-color: rgb(232,76,61);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.RestChoose{
+  width: 125px;
+  height: 151px;
+  position: absolute;
+}
+
+#icon1{
+  position: absolute;
+  margin-left: 48px;
+}
+
+#icon2{
+  position: absolute;
+  margin-left: 48px;
+  margin-top:50px;
+}
+
+#icon3{
+  position: absolute;
+  margin-left: 48px;
+  margin-top:125px;
+}
+
+#icon4{
+  position: absolute;
+  margin-left: 48px;
+  margin-top:200px;
+}
+
+#icon5{
+  position: absolute;
+  margin-left: 48px;
+  margin-top:275px;
+}
+
+#icon6{
+  position: absolute;
+  margin-left: 48px;
+  margin-top:350px;
+}
+
+#icon7{
+  position: absolute;
+  margin-left: 48px;
+  margin-top:425px;
+}
+
+#icon8{
+  position: absolute;
+  margin-left: 48px;
+  margin-top:500px;
+}
+
+
 
 #txt{
   position: absolute;
