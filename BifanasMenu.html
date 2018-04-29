@@ -232,7 +232,13 @@
     Total:<input type="total" name="total" id="total"/> €
 </h1>
 
-<a class="Concluido" type="button" href=".html">Concluir</a>
+<script>
+  function setValue(){
+    localStorage.setItem('total', total);
+  }
+</script>
+
+<a class="Concluido" type="button" onclick="setValue()"href="list.html">Concluir</a>
 
 </body>
 

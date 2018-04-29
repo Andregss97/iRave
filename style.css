@@ -73,6 +73,21 @@ p{
     border-radius: 6px;
 }
 
+.Pagar {
+    position: absolute;
+    width: 55px;
+    top: 112px;
+    left: 85px;
+    background-color: rgb(70,130,180);
+    color: white;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 6px;
+}
+
 
 .previous {
     background-color: #333333;
@@ -86,6 +101,13 @@ p{
 
 .round {
     border-radius: 70%;
+}
+
+.back {
+  background-color: #333333;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .no-click {
@@ -121,6 +143,7 @@ p{
 
 .Restaurant{
     width:141px;
+    height: 130px;
 }
 
 .Restaurants iframe{
@@ -151,7 +174,7 @@ input[type=total] {
 
 .RestChoose{
   width: 125px;
-  height: 151px;
+  height: 125px;
   position: absolute;
 }
 

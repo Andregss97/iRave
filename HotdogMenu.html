@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>iRave</title>
     <link rel="stylesheet" href="style.css">
-    <script>var total = 0;</script>
+    <script>
+        var total = 0;
+    </script>
 </head>
 
 <body class="RestChoose">
@@ -232,7 +234,14 @@
     Total:<input type="total" name="total" id="total"/> €
 </h1>
 
-<a class="Concluido" type="button" href=".html">Concluir</a>
+<script>
+  function setValue(){
+    localStorage.setItem('total', total);
+  }
+</script>
+
+<a class="Concluido" type="button" onclick="setValue()" href="list.html">Concluir</a>
+
 
 </body>
 

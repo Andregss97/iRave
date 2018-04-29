@@ -1,0 +1,24 @@
+<DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>iRave</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function funct(){
+        var total = localStorage.getItem('total');
+        document.getElementById("total").innerHTML = total;
+        localStorage.clear();
+      }
+    </script>
+</head>
+
+<body onload="funct()" class="RestChoose">
+  <a class="back" type="button" href="javascript:history.back()" style="font-size: 20px;">&#8630</a>
+  <h1 style="position:absolute; font-size: 12px; top: 105px; left:10px;">Total: <span id="total"></span> €</h1>
+  <a class="Pagar" type="button" href="orderCompleted.html">Pagar</a>
+</body>
+
+</html>

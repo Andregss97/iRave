@@ -1,0 +1,25 @@
+<DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>iRave</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      var number = Math.round((Math.random()*100)+1);
+        function functEspera(){
+          document.getElementById("number").innerHTML = number;
+        }
+    </script>
+</head>
+
+<body onload="functEspera()" class="RestChoose">
+  <h1 style="position:absolute; font-size: 12px; top: 0px; left:20px;">Pedido Completado</h1>
+  <h1 style="position:absolute; font-size: 12px; top: 20px; left:40px;">com sucesso</h1>
+  <h1 style="position:absolute; font-size: 25px; top: 35px; left:45px;">Nº <span id="number"></span></h1>
+  <h1 style="position:absolute; font-size: 12px; top: 85px; left:25px;">Aguarde a sua vez,</h1>
+  <h1 style="position:absolute; font-size: 12px; top: 105px; left:50px;">por favor</h1>
+</body>
+
+</html>
