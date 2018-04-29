@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>iRave</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};
+        return i;
+    }
+  </script>
+</head>
+
+<body onload="startTime()">
+  <img id="smartwatch" src="images/smartwatch.png" alt="smartwatchImage"/>
+  <div class="functions">
+    <img src="images/iRave_img.png" style="height:30px; width:80px; margin-left:37px; margin-top:9px"/>
+    <a href="RestaurantChoice.html" target="">
+      <img id="foodFunction" src="images/food.png" width="40px" height="40px" alt="foodApp">
+    </a>
+    <a href="scheduleApp1.html" target="">
+      <img id="scheduleFunction" src="images/schedule.png" width="40px" height="40px" alt="scheduleApp">
+    </a>
+    <a href="https://www.google.com/maps" target="">
+      <img id="findFunction" src="images/find.png" width="40px" height="40px" alt="findApp">
+    </a>
+    <a href="http://blank.org/" target="">
+      <img id="blankFunction" src="images/blank.png" width="40px" height="40px" alt="blankApp">
+    </a>
+  </div>
+  <p id="txt" style="color:white; width:151px;"/>
+</body>
+
+</html>

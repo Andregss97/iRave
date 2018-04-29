@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>iRave</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};
+        return i;
+    }
+  </script>
+</head>
+
+<body onload="startTime()">
+  <img id="smartwatch" src="images/smartwatch.png" alt="smartwatchImage" usemap="#homeButton"/>
+  <map name="homeButton">
+    <area shape="circle" coords="230,140,10" href="index.html" alt="Button">
+  </map>
+  <div class="Days">
+    <h1 id="Day">
+      <a href="scheduleApp1.html" class="next round">&#8630;</a> Back
+    </h1>
+    <iframe name="iframe" src="bThePolice2.html" width="148" height="95" scrolling="yes" frameborder="0">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+  <p id="txt" style="color:white; width:151px;"/>
+</body>
+
+</html>
