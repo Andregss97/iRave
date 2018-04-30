@@ -161,6 +161,7 @@ input[type=text] {
     background-color: rgb(232,76,61);
     border-radius: 5px;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 input[type=total] {
@@ -170,6 +171,7 @@ input[type=total] {
     border-radius: 5px;
     border: 2px;
     width: 35px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .RestChoose{
