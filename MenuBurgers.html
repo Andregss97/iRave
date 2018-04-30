@@ -8,7 +8,7 @@
     <script>var total = 0;</script>
 </head>
 
-<body class="RestChoose">
+<body class="RestChoose" onload="findTotal()">
         <input type="button" onclick="window.location.href='Restaurants.html'" value="x" style="position: absolute; width: 23px; border-radius:15px; background-color:black; color: white; margin-top:-2px; margin-left:-2px;">
         <sub id="input_div">
             <input type="button" value="-" id="minus" onclick="minus(); findTotal()" style="position:absolute; margin-top:15px; margin-left: 22px;">
@@ -21,6 +21,7 @@
           var count = 0;
           var price1 = 4;
               var countEl = document.getElementById("count");
+              countEl.value = count;
               function plus(){
                   count++;
                   total=Math.round((total+price1)*1e12)/1e12;
@@ -50,6 +51,7 @@
           var count2 = 0;
           var price2 = 4.50;
               var countEl2 = document.getElementById("count2");
+              countEl2.value = count2;
               function plus2(){
                   count2++;
                   total=Math.round((total+price2)*1e12)/1e12;
@@ -81,6 +83,7 @@
           var count3 = 0;
           var price3 = 5;
               var countEl3 = document.getElementById("count3");
+              countEl3.value = count3;
               function plus3(){
                   count3++;
                   total=Math.round((total+price3)*1e12)/1e12;
@@ -112,6 +115,7 @@
           var count4 = 0;
           var price4 = 1;
               var countEl4 = document.getElementById("count4");
+              countEl4.value = count4;
               function plus4(){
                   count4++;
                   total=Math.round((total+price4)*1e12)/1e12;
@@ -143,6 +147,7 @@
           var count5 = 0;
           var price5 = 1.20;
               var countEl5 = document.getElementById("count5");
+              countEl5.value = count5;
               function plus5(){
                   count5++;
                   total=Math.round((total+price5)*1e12)/1e12;
@@ -174,6 +179,7 @@
           var count6 = 0;
           var price6 = 1.20;
               var countEl6 = document.getElementById("count6");
+              countEl6.value = count6;
               function plus6(){
                   count6++;
                   total=Math.round((total+price6)*1e12)/1e12;
@@ -205,6 +211,7 @@
           var count7 = 0;
           var price7 = 0.80;
               var countEl7 = document.getElementById("count7");
+              countEl7.value = count7;
               function plus7(){
                   count7++;
                   total=Math.round((total+price7)*1e12)/1e12;
