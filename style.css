@@ -178,6 +178,7 @@ input[type=total] {
   width: 125px;
   height: 125px;
   position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #icon1{
