@@ -73,6 +73,21 @@ p{
     border-radius: 6px;
 }
 
+.Find {
+    position: absolute;
+    width: 45px;
+    top: 125px;
+    left: 85px;
+    background-color: rgb(100,149,237);
+    color: black;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 6px;
+}
+
 .Pagar {
     position: absolute;
     width: 55px;
@@ -159,6 +174,15 @@ input[type=text] {
     margin-left: 88px;
     border: 2px;
     background-color: rgb(232,76,61);
+    border-radius: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=textId] {
+    position: absolute;
+    border: 2px;
+    background-color: rgb(176,196,222);
     border-radius: 5px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -251,6 +275,14 @@ input[type=total] {
   height:279px;
   width:279px;
   background-color: rgb(245,245,245);
+}
+
+#map{
+  position: absolute;
+  top:5px;
+  height:145px;
+  width:150px;
+  border-radius: 15px;
 }
 
 #foodFunction{
