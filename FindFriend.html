@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>iRave</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico">
+  <script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};
+        return i;
+    }
+  </script>
+</head>
+
+<body onload="startTime()">
+  <img id="smartwatch" src="images/smartwatch.png" alt="smartwatchImage" usemap="#homeButton"/>
+  <map name="homeButton">
+    <area shape="circle" coords="230,140,10" href="index.html" alt="Button">
+  </map>
+  <div class="functions">
+    <h1 style="position: absolute; font-family: Arial, Helvetica, sans-serif; font-size: 12px; top:10px; left:15px;">Enter your friends ID</h1>
+    <input type="button" value="-" id="minus" onclick="minus()" style="position:absolute; width: 25px; margin-top:90px; margin-left: 18px;">
+    <input type="textId" style="font-family: Arial, Helvetica, sans-serif; width: 15px; margin-top:69px; margin-left:22px;" value="0" id="count" name="count">
+    <input type="button" value="+" id="plus" onclick="plus()" style="position:absolute; width: 25px; margin-top:45px; margin-left: 18px;">
+
+    <script>
+            var count = 0;
+                var countEl = document.getElementById("count");
+                countEl.value = count;
+                function plus(){
+                    count++;
+                    if(count>9){
+                      count=0;
+                    }
+                    countEl.value = count;
+                }
+                function minus(){
+                  if(count==0){
+                    count=10;
+                    countEl.value = count;
+                  }
+                  if (count > 0) {
+                    count--;
+                    countEl.value = count;
+                  }
+                }
+    </script>
+
+    <input type="button" value="-" id="minus2" onclick="minus2()" style="position:absolute; width: 25px; margin-top:90px; margin-left: 48px;">
+    <input type="textId" style="font-family: Arial, Helvetica, sans-serif; width: 15px; margin-top:69px; margin-left:52px;" value="0" id="count2" name="count">
+    <input type="button" value="+" id="plus2" onclick="plus2()" style="position:absolute; width: 25px; margin-top:45px; margin-left: 48px;">
+
+    <script>
+            var count2 = 0;
+                var countEl2 = document.getElementById("count2");
+                countEl.value = count2;
+                function plus2(){
+                    count2++;
+                    if(count2>9){
+                      count2=0;
+                    }
+                    countEl2.value = count2;
+                }
+                function minus2(){
+                  if(count2==0){
+                    count2=10;
+                    countEl2.value = count2;
+                  }
+                  if (count2 > 0) {
+                    count2--;
+                    countEl2.value = count2;
+                  }
+                }
+    </script>
+
+    <input type="button" value="-" id="minus3" onclick="minus3()" style="position:absolute; width: 25px; margin-top:90px; margin-left: 78px;">
+    <input type="textId" style="font-family: Arial, Helvetica, sans-serif; width: 15px; margin-top:69px; margin-left:82px;" value="0" id="count3" name="count">
+    <input type="button" value="+" id="plus3" onclick="plus3()" style="position:absolute; width: 25px; margin-top:45px; margin-left: 78px;">
+
+    <script>
+            var count3 = 0;
+                var countEl3 = document.getElementById("count3");
+                countEl4.value = count3;
+                function plus3(){
+                    count3++;
+                    if(count3>9){
+                      count3=0;
+                    }
+                    countEl3.value = count3;
+                }
+                function minus3(){
+                  if(count3==0){
+                    count3=10;
+                    countEl3.value = count3;
+                  }
+                  if (count3 > 0) {
+                    count3--;
+                    countEl3.value = count3;
+                  }
+                }
+    </script>
+
+    <input type="button" value="-" id="minus4" onclick="minus4()" style="position:absolute; width: 25px; margin-top:90px; margin-left: 108px;">
+    <input type="textId" style="font-family: Arial, Helvetica, sans-serif; width: 15px; margin-top:69px; margin-left:112px;" value="0" id="count4" name="count">
+    <input type="button" value="+" id="plus4" onclick="plus4()" style="position:absolute; width: 25px; margin-top:45px; margin-left: 108px;">
+
+    <script>
+            var count4 = 0;
+                var countEl4 = document.getElementById("count4");
+                countEl4.value = count4;
+                function plus4(){
+                    count4++;
+                    if(count4>9){
+                      count4=0;
+                    }
+                    countEl4.value = count4;
+                }
+                function minus4(){
+                  if(count4==0){
+                    count4=10;
+                    countEl4.value = count4;
+                  }
+                  if (count4 > 0) {
+                    count4--;
+                    countEl4.value = count4;
+                  }
+                }
+    </script>
+    <a style="font-family: Arial, Helvetica, sans-serif; font-size:12px" type="button" class="Find" href="Find.html">Find</a>
+  </div>
+  <p id="txt" style="color:white; width:151px;"/>
+</body>
+
+</html>
