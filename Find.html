@@ -21,20 +21,48 @@
         if (i < 10) {i = "0" + i};
         return i;
     }
+
+    function random(){
+      var number = Math.round((Math.random()*(6-1))+1);
+      console.log(number);
+      if(number == 1){
+        document.getElementById("target").style.top = "110px";
+        document.getElementById("target").style.left = "10px";
+      }
+      if(number == 2){
+        document.getElementById("target").style.top = "80px";
+        document.getElementById("target").style.left = "110px";
+      }
+      if(number == 3){
+        document.getElementById("target").style.top = "50px";
+        document.getElementById("target").style.left = "30px";
+      }
+      if(number == 4){
+        document.getElementById("target").style.top = "10px";
+        document.getElementById("target").style.left = "100px";
+      }
+      if(number == 5){
+        document.getElementById("target").style.top = "20px";
+        document.getElementById("target").style.left = "115px";
+      }
+      if(number == 6){
+        document.getElementById("target").style.top = "100px";
+        document.getElementById("target").style.left = "70px";
+      }
+    }
   </script>
 </head>
 
-<body onload="startTime()">
+<body onload="startTime(); random()">
   <img id="smartwatch" src="images/smartwatch.png" alt="smartwatchImage" usemap="#homeButton"/>
   <map name="homeButton">
     <area shape="circle" coords="230,140,10" href="index.html" alt="Button">
   </map>
   <div class="functions">
     <img id="map" src="images/festival_map.png" alt="mapImage" usermap="#location"/>
-    <map name="location">
-
-    </map>
+    <img id="target" src="images/target.png" width="20" style="position:absolute"/>
     <input type="button" onclick="window.location.href='FindFriend.html'" value="x" style="position: absolute; width: 23px; border-radius:15px; background-color:black; color: white; margin-top:10px; margin-left:0px;">
+    <input type="button" onclick="window.location.href='Legenda.html'" value="?" style="position: absolute; width: 23px; border-radius:15px; background-color:black; color: white; margin-top:10px; margin-left:128px;">
   </div>
   <p id="txt" style="color:white; width:151px;"/>
 </body>
