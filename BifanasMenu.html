@@ -5,7 +5,15 @@
     <meta charset="UTF-8">
     <title>iRave</title>
     <link rel="stylesheet" href="style.css">
-    <script>var total = 0;</script>
+    <script>var total = 0;
+    var element1 = 0;
+    var element2 = 0;
+    var element3 = 0;
+    var element4 = 0;
+    var element5 = 0;
+    var element6 = 0;
+    var element7 = 0;
+    </script>
 </head>
 
 <body class="RestChoose" onload="findTotal()">
@@ -242,10 +250,17 @@
 <script>
   function setValue(){
     localStorage.setItem('total', total);
+    localStorage.setItem('element1', count);
+    localStorage.setItem('element2', count2);
+    localStorage.setItem('element3', count3);
+    localStorage.setItem('element4', count4);
+    localStorage.setItem('element5', count5);
+    localStorage.setItem('element6', count6);
+    localStorage.setItem('element7', count7);
   }
 </script>
 
-<a class="Concluido" type="button" onclick="setValue()"href="list.html" style="font-family: Arial, Helvetica, sans-serif;">Concluir</a>
+<a class="Concluido" type="button" onclick="setValue()"href="list3.html" style="font-family: Arial, Helvetica, sans-serif;">Concluir</a>
 
 </body>
 

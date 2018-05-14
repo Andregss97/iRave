@@ -2,10 +2,15 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
   <title>iRave</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="images/favicon.ico">
-  <script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+    <script>var name = "";</script>
+
+    <script>
     function startTime() {
         var today = new Date();
         var h = today.getHours();
@@ -138,9 +143,54 @@
                   }
                 }
     </script>
-    <a style="font-family: Arial, Helvetica, sans-serif; font-size:12px" type="button" class="Find" href="Find.html">Find</a>
+
+<!--2 LINHAS SEGUINTES AQUI APARECE NOME. DEPOIS DO SCRIPT NAO APARECE-->
+
+      <a style="font-family: Arial, Helvetica, sans-serif; font-size:12px" type="button" class="Find" onclick="setValue2()"  href="FriendConfirm.html">Add</a>
+      <h2></h2>
+<!-- -->
+
+    <script>
+    $('a').click(function() {
+            $('h2').text(randomEl(firstname)+' '+randomEl(lastname));
+            selectElementContents($('h2')[0]);
+            });
+
+    function randomEl(list) {
+          var i = Math.floor(Math.random() * list.length);
+          return list[i];
+          }
+
+    function selectElementContents(el) {
+          var range = document.createRange();
+          range.selectNodeContents(el);
+          var sel = window.getSelection();
+          sel.removeAllRanges();
+          sel.addRange(range);
+          }
+
+    var firstname = ["Pedro", "João", "António", "Marco", "Luís", "André", "Gonçalo", "Mário", "Miguel", "Manuel", "Arlindo", "José", "Rui", "Alexandre", "Eduardo",
+     "Joaquim", "Jaime", "Andreia", "Mariana", "Maria", "Rute", "Patrícia", "Ana", "Mafalda", "Rita", "Sérgio", "Hugo", "Catarina", "Carolina", "Camila", "Ricardo",
+      "Inês", "Joana", "Marta", "Vânia", "Daniel", "Daniela", "Jorge", "Afonso", "Beatriz", "Júlia", "Sofia"];
+
+    var lastname = ["Pereira", "Santos", "Gonçalves", "Almeida", "Coelho", "Nunes", "Antunes", "Ferreira", "Mendonça", "Silva", "Oliveira", "Patrício", "Carvalho",
+    "Costa", "Martins", "Rodrigues", "Sousa", "Fernandes", "Lopes", "Ribeiro", "Teixeira", "Correia", "Mendes", "Rocha", "Vieira", "Cunha", "Cruz", "Pires", "Ramos",
+    "Tavares", "Pinho", "Amaral", "Moura", "Paiva", "Vaz", "Vicente", "Neto", "Neves","Abreu", "Loureiro"];
+
+    $('a').click();
+
+   // COMENTARIO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! function setValue2(){
+   //   PARA APARECER O NOME, SÓ PARA SABER Q RANDOM FUNCIONA   localStorage.setItem('name', list);
+</script>
+
+
+
   </div>
   <p id="txt" style="color:white; width:151px;"/>
+
+
+
+
 </body>
 
 </html>
