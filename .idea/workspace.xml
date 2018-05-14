@@ -4,20 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/FindFriend.html" line="145" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c672ac9-fd6d-4d11-bfe0-73200a32b887" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/festival_map.png" afterPath="$PROJECT_DIR$/images/festival_map.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/legenda.png" afterPath="$PROJECT_DIR$/images/legenda.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BifanasMenu.html" afterPath="$PROJECT_DIR$/BifanasMenu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Find.html" afterPath="$PROJECT_DIR$/Find.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindFriend.html" afterPath="$PROJECT_DIR$/FindFriend.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HotdogMenu.html" afterPath="$PROJECT_DIR$/HotdogMenu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MenuBurgers.html" afterPath="$PROJECT_DIR$/MenuBurgers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Restaurants.html" afterPath="$PROJECT_DIR$/Restaurants.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/list.html" afterPath="$PROJECT_DIR$/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orderCompleted.html" afterPath="$PROJECT_DIR$/orderCompleted.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-    </list>
+    <list default="true" id="6c672ac9-fd6d-4d11-bfe0-73200a32b887" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="976" />
@@ -323,11 +310,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525011860006</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="falta passar nome">
+      <created>1526321721648</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1526321721648</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -389,7 +383,8 @@
     <MESSAGE value="aa" />
     <MESSAGE value="aaa" />
     <MESSAGE value="faltamultiplicar" />
-    <option name="LAST_COMMIT_MESSAGE" value="faltamultiplicar" />
+    <MESSAGE value="falta passar nome" />
+    <option name="LAST_COMMIT_MESSAGE" value="falta passar nome" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -545,6 +540,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="76" lean-forward="false" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#sub#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

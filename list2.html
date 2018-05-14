@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>iRave</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function funct(){
+      var total = localStorage.getItem('total');
+      var element1 = localStorage.getItem('element1');
+      var element2 = localStorage.getItem('element2');
+      var element3 = localStorage.getItem('element3');
+      var element4 = localStorage.getItem('element4');
+      var element5 = localStorage.getItem('element5');
+      var element6 = localStorage.getItem('element6');
+      var element7 = localStorage.getItem('element7');
+      document.getElementById("total").innerHTML = total;
+      document.getElementById("element1").innerHTML = element1;
+      document.getElementById("element2").innerHTML = element2;
+      document.getElementById("element3").innerHTML = element3;
+      document.getElementById("element4").innerHTML = element4;
+      document.getElementById("element5").innerHTML = element5;
+      document.getElementById("element6").innerHTML = element6;
+      document.getElementById("element7").innerHTML = element7;
+
+      if(element1 > 0){
+        burguer.style.display = "block";
+      }
+      else {
+        burguer.style.display = "none";
+      }
+
+      if(element2 > 0){
+      cheeseburger.style.display = "block";
+      }
+      else {
+        cheeseburger.style.display = "none";
+      }
+
+      if(element3 > 0){
+        baconBurger.style.display = "block";
+      }
+      else {
+        baconBurger.style.display = "none";
+      }
+
+      if(element4 > 0){
+        fries.style.display = "block";
+      }
+      else {
+        fries.style.display = "none";
+      }
+
+      if(element5 > 0){
+        coke.style.display = "block";
+      }
+      else {
+        coke.style.display = "none";
+      }
+
+      if(element6 > 0){
+        icedTea.style.display = "block";
+      }
+      else {
+        icedTea.style.display = "none";
+      }
+
+      if(element7 > 0){
+        water.style.display = "block";
+      }
+      else {
+        water.style.display = "none";
+      }
+
+    }
+</script>
+
+</head>
+
+
+
+<body onload="funct()" class="RestChoose">
+
+  <a class="back" type="button" href="javascript:history.back()" style="font-size: 20px;">&#8630</a>
+
+  <h1 id="burguer" style="position:relative; font-size: 10px; top:5px; left:10px;">Burger x<span id="element1"></span> .............. 4€</h1>
+  <h1 id="cheeseburger" style="position:relative; font-size: 10px; top:10px; left:10px;">Cheeseburger x<span id="element2"></span> ... 4.50€</h1>
+  <h1 id="baconBurger" style="position:relative; font-size: 10px; top:15px; left:10px;">Bacon Burger x<span id="element3"></span> ... 5€</h1>
+  <h1 id="fries" style="position:relative; font-size: 10px; top:20px; left:10px;">Fries x<span id="element4"></span> ................ 1€</h1>
+  <h1 id="coke" style="position:relative; font-size: 10px; top:25px; left:10px;">Coke x<span id="element5"></span> ............ 1.20€</h1>
+  <h1 id="icedTea" style="position:relative; font-size: 10px; top:30px; left:10px;">Iced Tea x<span id="element6"></span> ........ 1.20€</h1>
+  <h1 id="water" style="position:relative; font-size: 10px; top:35px; left:10px;">Water x<span id="element7"></span> ............ 0.80€</h1>
+
+  <h1 style="position:relative; font-size: 12px; top: 80px; left:10px;">Total: <span id="total"></span> €</h1>
+
+  <a class="Pagar" type="button" href="orderCompleted.html">Pagar</a>
+
+</body>
+
+
+
+</html>
