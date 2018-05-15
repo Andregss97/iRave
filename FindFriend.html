@@ -8,7 +8,7 @@
   <link rel="icon" href="images/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
-    <script>var name = "";</script>
+    <script>var name = [];</script>
 
     <script>
     function startTime() {
@@ -147,7 +147,7 @@
 <!--2 LINHAS SEGUINTES AQUI APARECE NOME. DEPOIS DO SCRIPT NAO APARECE-->
 
       <a style="font-family: Arial, Helvetica, sans-serif; font-size:12px" type="button" class="Find" onclick="setValue2()"  href="FriendConfirm.html">Add</a>
-      <h2></h2>
+      <h2 id="name"></h2>
 <!-- -->
 
     <script>
@@ -177,10 +177,14 @@
     "Costa", "Martins", "Rodrigues", "Sousa", "Fernandes", "Lopes", "Ribeiro", "Teixeira", "Correia", "Mendes", "Rocha", "Vieira", "Cunha", "Cruz", "Pires", "Ramos",
     "Tavares", "Pinho", "Amaral", "Moura", "Paiva", "Vaz", "Vicente", "Neto", "Neves","Abreu", "Loureiro"];
 
+
+
     $('a').click();
 
-   // COMENTARIO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! function setValue2(){
-   //   PARA APARECER O NOME, SÓ PARA SABER Q RANDOM FUNCIONA   localStorage.setItem('name', list);
+function setValue2(){
+     localStorage.setItem('name', list);
+
+
 </script>
 
 
