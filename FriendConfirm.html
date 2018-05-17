@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iRave</title>
+
+    <script>
+    function funct2(){
+      var name = localStorage.getItem('name');
+      document.getElementById("name").innerHTML = name;
+      name.style.display = "block";
+</script>
+
+</head>
+<body onload="funct2()">
+
+<h2 style="position:absolute; font-size: 11px; top: 0px; left:20px;">Add <span id="name"></span> ?</h2>
+
+
+
+
+</body>
+</html>
