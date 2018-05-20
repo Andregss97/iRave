@@ -151,8 +151,12 @@
 <!-- -->
 
     <script>
+	var generatedName = null;
+	
     $('a').click(function() {
-            $('h2').text(randomEl(firstname)+' '+randomEl(lastname));
+			generatedName = randomEl(firstname) + ' ' + randomEl(lastname);
+		
+            $('h2').text(generatedName);
             selectElementContents($('h2')[0]);
             });
 
@@ -182,7 +186,7 @@
     $('a').click();
 
     function setValue2(){
-      localStorage.setItem('name', list);
+      localStorage.setItem('name', generatedName);
     }
 
     </script>
