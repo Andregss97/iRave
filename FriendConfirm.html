@@ -3,19 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>iRave</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
 
     <script>
     function funct2(){
       var name = localStorage.getItem('name');
       document.getElementById("name").innerHTML = name;
-
     }
-</script>
+
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};
+        return i;
+    }
+    </script>
 
 </head>
-<body onload="funct2()">
 
-<h2 style="position:absolute; font-size: 11px; top: 0px; left:20px;">Add <span id="name"></span> ?</h2>
-
+<body onload="funct2(); startTime()">
+  <img id="smartwatch" src="images/smartwatch.png" alt="smartwatchImage" usemap="#homeButton"/>
+  <map name="homeButton">
+    <area shape="circle" coords="230,140,10" href="index.html" alt="Button">
+  </map>
+  <div class="Functions">
+      <h2 style="position:absolute; font-size: 15px; font-family: Arial, Helvetica, sans-serif; top: 20px; left:10px; color:rgb(70,130,180)">This ID belongs to</h2>
+      <h2><span id="name" style="position:absolute; font-size: 15px; font-family: Arial, Helvetica, sans-serif; top: 50px; left:10px; color:black"></span></h2>
+      <h2 style="position:absolute; font-size: 15px; font-family: Arial, Helvetica, sans-serif; top: 70px; left:55px; color:rgb(70,130,180)">ADD?</h2>
+      <a style="font-family: Arial, Helvetica, sans-serif; font-size:12px" type="button" class="Find" href="FriendChoice.html">Yes</a>
+      <a style="font-family: Arial, Helvetica, sans-serif; font-size:12px" type="button" class="Find2" href="FindFriend.html">No</a>
+  </div>
+  <p id="txt" style="color:white; width:151px;"/>
 </body>
 </html>

@@ -147,15 +147,14 @@
 <!--2 LINHAS SEGUINTES AQUI APARECE NOME. DEPOIS DO SCRIPT NAO APARECE-->
 
       <a style="font-family: Arial, Helvetica, sans-serif; font-size:12px" type="button" class="Find" onclick="setValue2()"  href="FriendConfirm.html">Add</a>
-      <h2 id="name"></h2>
 <!-- -->
 
     <script>
 	var generatedName = null;
-	
+
     $('a').click(function() {
 			generatedName = randomEl(firstname) + ' ' + randomEl(lastname);
-		
+
             $('h2').text(generatedName);
             selectElementContents($('h2')[0]);
             });
@@ -191,14 +190,8 @@
 
     </script>
 
-
-
   </div>
   <p id="txt" style="color:white; width:151px;"/>
-
-
-
-
 </body>
 
 </html>

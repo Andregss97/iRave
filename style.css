@@ -88,6 +88,21 @@ p{
     border-radius: 6px;
 }
 
+.Find2 {
+    position: absolute;
+    width: 45px;
+    top: 125px;
+    left: 25px;
+    background-color: rgb(100,149,237);
+    color: white;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 6px;
+}
+
 .Pagar {
     position: absolute;
     width: 55px;
@@ -116,6 +131,18 @@ p{
 
 .round {
     border-radius: 70%;
+}
+
+.Add {
+  position: absolute;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  width: 15px;
+  margin-top: 205px;
+  margin-left:710px;
+  text-decoration: none;
 }
 
 .back {
