@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <title>iRave</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+    function funct2(){
+      var contador = localStorage.getItem('contador');
+      var listaNomes = localStorage.getItem('listaNomes');
+      document.getElementById("listaNomes").innerHTML = listaNomes;
+      document.getElementById("contador").innerHTML =  contador;
+
+      if(fruits.length == 0){
+        nofriends.style.display = "block";
+        friends.style.display = "none";
+      }
+      else {
+        nofriends.style.display = "none";
+        friends.style.display = "block";
+      }
+      alert(contador);
+    }
+    </script>
+
 </head>
 
 <body class="schedule">
@@ -12,7 +32,12 @@
       <th style="background-color: rgb(70,130,180)">Friends</th>
     </tr>
     <tr>
-      <td>No friends yet, poor you!</td>
+      <td>
+        <div>
+          <h1 id="nofriends" style="position:relative; font-size: 10px; top:-30px; left:17px"> No friends yet, poor you! </h1>
+          <h1 id="friends" style="position:relative; font-size: 10px; top:-30px; left:17px"><span id="listaNomes[1]s"></span></h1>
+        </div>
+      </td>
     </tr>
   </table>
 

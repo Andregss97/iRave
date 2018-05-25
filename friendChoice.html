@@ -2,9 +2,47 @@
 <html lang="en">
 <head>
     <title>iRave</title>
+    <style> a { display:block; } </style>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script>
+
+    function verifica(){
+
+        var listaNomesExiste = localStorage.getItem('listaNomes');
+
+
+
+        var name = localStorage.getItem('name');
+
+
+
+        var contador = localStorage.getItem('contador');
+
+
+
+        if (listaNomesExiste == null) {
+           var listaNomes = new Array();
+           if (contador == 1) {
+             listaNomes.push(name);
+             localStorage.setItem('listaNomes', JSON.stringify(listaNomes));
+
+           }
+         }
+        else {
+          if (contador == 1) {
+            var retrievedData = localStorage.getItem('listaNomes');
+
+            var listaNomes = JSON.parse(retrievedData);
+            listaNomes.push(name);
+            localStorage.setItem('listaNomes', JSON.stringify(listaNomes));
+        }
+      }
+
+
+    }
+
     function startTime() {
         var today = new Date();
         var h = today.getHours();
@@ -20,20 +58,36 @@
         if (i < 10) {i = "0" + i};
         return i;
     }
-  </script>
+
+    function myFunction() {
+      var retrievedData = localStorage.getItem('listaNomes');
+      var listaNomes = JSON.parse(retrievedData);
+    for (var i = 0; i < listaNomes.length; i++) {
+        var a = document.createElement('a');
+        var linkText = document.createTextNode(listaNomes[i]);
+        a.appendChild(linkText);
+        a.href = "Find.html";
+        document.getElementById("demo").appendChild(a);
+    }
+  }
+
+    </script>
 </head>
 
-<body onload="startTime()">
-<img id="smartwatch" src="images/smartwatch.png" alt="smartwatchImage" usemap="#homeButton"/>
-<map name="homeButton">
+<body onload="startTime(); verifica()">
+  <img id="smartwatch" src="images/smartwatch.png" alt="smartwatchImage" usemap="#homeButton"/>
+  <map name="homeButton">
     <area shape="circle" coords="230,140,10" href="index.html" alt="Button">
-</map>
-<div class="Restaurants">
-    <iframe name="iframe" src="Friends.html" width="155" height="136" scrolling="yes" frameborder="0">
-        <p>Your browser does not support iframes.</p>
-    </iframe>
-</div>
-<a href="FindFriend.html" class="Add">+</a>
-<p id="txt" style="color:white; width:151px;"/>
+  </map>
+  <div id="demo" class="Functions">
+      <h2 style="position:absolute; font-size: 16px; font-family: Arial, Helvetica, sans-serif; top: 3px; left:45px; color:rgb(70,130,180)">Friends</h2>
+      <h3 style="margin-top:35px;">
+      <script>
+        myFunction();
+      </script>
+      </h3>
+      <a style="font-family: Arial, Helvetica, sans-serif; font-size:12px" type="button" class="Find2" href="FindFriend.html">+</a>
+  </div>
+  <p id="txt" style="color:white; width:151px;"/>
 </body>
 </html>
